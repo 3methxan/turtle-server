@@ -20,6 +20,7 @@ module.exports = defineConfig({
   admin: { disable: process.env.DISABLE_MEDUSA_ADMIN === "true" },
 
   modules: [
+    
     {
       resolve: "@medusajs/cache-redis",
       key: ModuleRegistrationName.CACHE,
