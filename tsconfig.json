@@ -11,9 +11,12 @@
     "declaration": false,
     "sourceMap": false,
     "inlineSourceMap": true,
-    "outDir": "./.medusa/server/public/admin/",
+    "outDir": "./.medusa/server/public/admin",
     "rootDir": "./",
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,

@@ -24,14 +24,14 @@ module.exports = defineConfig({
       resolve: "@medusajs/cache-redis",
       key: ModuleRegistrationName.CACHE,
       options: {
-        redisUrl: process.env.REDIS_URL + "?family=0",
+        redisUrl: `${process.env.REDIS_URL}?family=0`,
       },
     },
     {
       resolve: "@medusajs/event-bus-redis",
       key: ModuleRegistrationName.EVENT_BUS,
       options: {
-        redisUrl: process.env.REDIS_URL + "?family=0",
+        redisUrl: `${process.env.REDIS_URL}?family=0`,
       },
     },
     {
