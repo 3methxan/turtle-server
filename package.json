@@ -16,7 +16,7 @@
     "build": "medusa build",
     "build:ish": "medusa build && ln -s .medusa/server/public/ public",
     "seed": "medusa exec ./src/scripts/seed.ts",
-    "start": "NODE_ENV=production medusa start -H 0.0.0.0",
+    "start": "NODE_ENV=production medusa start",
     "start:cloudflare": "medusa build && medusa db:migrate && medusa start",
     "migrate": "medusa db:migrate",
     "dev": "medusa develop",
