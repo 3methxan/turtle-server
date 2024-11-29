@@ -13,12 +13,12 @@
     "medusa"
   ],
   "scripts": {
-    "build": "medusa build && ln -s .medusa/server/public/ public",
-    "build:admin": "medusa-admin build",
+    "build": "medusa build",
+    "build:ish": "medusa build && ln -s .medusa/server/public/ public",
     "seed": "medusa exec ./src/scripts/seed.ts",
+    "start": "NODE_ENV=production medusa start -H 0.0.0.0",
     "start:cloudflare": "medusa build && medusa db:migrate && medusa start",
     "migrate": "medusa db:migrate",
-    "start": "medusa start",
     "dev": "medusa develop",
     "dev:admin": "medusa-admin develop",
     "test:integration:http": "TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",

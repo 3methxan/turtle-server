@@ -17,10 +17,10 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
   },
-  admin: { disable: process.env.DISABLE_MEDUSA_ADMIN === "true" },
+  admin: { disable: process.env.DISABLE_MEDUSA_ADMIN === "false" },
 
   modules: [
-    
+
     {
       resolve: "@medusajs/cache-redis",
       key: ModuleRegistrationName.CACHE,
